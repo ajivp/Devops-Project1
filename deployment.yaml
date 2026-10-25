@@ -15,7 +15,9 @@ spec:
         app: node-app
     spec:
       containers:
-      - name: node-app
-        image: <your-dockerhub-username>/node-devops-app:v1
-        ports:
-        - containerPort: 3000
+        - name: node-app
+          image: avp18/node-devops-app:v1
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 3000
+
